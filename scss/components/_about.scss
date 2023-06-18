@@ -1,0 +1,117 @@
+.about {
+    max-width: 900px;
+    display: flex;
+    margin: 0 auto;
+    padding: 2rem 0;
+
+    @media (width < 580px) {
+        gap: 2rem;
+        flex-direction: column-reverse;
+    }
+
+    .imgs-container {
+        
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media (width < 768px) and (width > 580px) {
+            justify-content: start;
+        }
+
+        .imgs {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .img-1 {
+                position: relative;
+                padding: 0 30px;
+                background: $red;
+                border-radius: 14px;
+                
+                width: 160px;
+                height: 200px;
+
+                @media (width < 768px) and (width > 580px) {
+                    transform: translateX(0px);
+                    padding: 0 20px;
+                    width: 150px;
+                    height: 190px;
+                }
+
+                img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                }
+
+                .img-2 {
+                    position: absolute;
+                    bottom: -45px;
+                    right: -60px;
+                    background: $blue;
+                    border-radius: 14px;
+                    border: 10px solid white;
+                    padding: 0 15px;
+                    width: 120px;
+                    height: 140px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+
+            
+        }
+    }
+
+    .content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        h3 {
+            color: $black;
+            font-size: 2.2rem;
+            font-weight: 600;
+        }
+
+        p {
+            color: $dark-gray;
+            font-size: .9rem;
+            font-weight: 400;
+        }
+
+        .list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            .list-item {
+                display: flex;
+                gap: 10px;
+                align-items: center;
+
+                .check {
+                    padding: 2px;
+                    background-color: $purple;
+                    border-radius: 50%;
+                    i {
+                        font-size: 18px;
+                        color: white;
+                    }
+                }
+
+                p {
+                    font-size: 16px;
+                    color: $black;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}

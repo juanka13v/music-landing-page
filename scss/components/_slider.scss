@@ -1,0 +1,116 @@
+.slider {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+
+  .container-title {
+    h3 {
+      text-align: start;
+    }
+  }
+
+  .cards-slider {
+    display: flex;
+    gap: 18px;
+    overflow-x: auto;
+    max-width: 100%;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+
+    &::-webkit-scrollbar {
+      width: 5px; /* Ancho de la barra de desplazamiento */
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: transparent; /* Color transparente para el pulgar de la barra de desplazamiento */
+    }
+
+    &::-webkit-scrollbar-track {
+      background-color: transparent; /* Color transparente para la pista de la barra de desplazamiento */
+    }
+
+    .card {
+        min-width: 300px;
+      width: max-content;
+      border-radius: 12px;
+      padding: 1rem;
+      background-color: $light-purple;
+      display: flex;
+      gap: 14px;
+
+      .icon {
+        border-radius: 12px;
+        background: $yellow;
+        width: 90px;
+        min-width: 90px;
+        height: 90px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &.red {
+          background: $red;
+        }
+
+        &.blue {
+          background: $blue;
+        }
+
+        &.yellow {
+          background: $yellow;
+        }
+
+        i {
+          color: $black;
+          font-size: 2.2rem;
+        }
+      }
+
+      .body {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        .title {
+          color: $black;
+          width: auto;
+          font-size: 1.4rem;
+          font-weight: 700;
+        }
+
+        .by {
+          color: $dark-gray;
+          font-size: 0.9rem;
+          font-weight: 400;
+          margin-top: 10px;
+        }
+
+        .time {
+          margin-top: auto;
+          font-size: 1rem;
+          font-weight: 700;
+          color: $black;
+        }
+
+        .play {
+          border-radius: 50%;
+          padding: 8px;
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: $purple;
+
+          i {
+            font-size: 1.5rem;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}

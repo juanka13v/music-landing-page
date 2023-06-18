@@ -1,0 +1,122 @@
+.price-container {
+    display: flex;
+    flex-direction: column;
+    
+    .bottons {
+        margin: 0 auto;
+        margin-bottom: 2rem;
+        display: flex;
+        gap: 10px;
+        padding: 10px 14px;
+        border-radius: 12px;
+        border: 1px solid $black;
+
+        .btn-outline {
+            border-color: white;
+
+            &:hover {
+                border-color: $purple;
+            }
+        }
+    }
+
+    .price {
+        margin: 0 auto;
+        max-width: 900px;
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+
+        @media (width < 768px) {
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .card {
+            padding: 1.5rem 0;
+            border-radius: 12px;
+            margin: 2rem 0;
+            min-width: 350px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+          
+            @media (width < 768px) {
+                margin: 0;
+            }
+
+            h3 {
+                font-size: 2.2rem;
+                font-weight: 600;
+                
+                span {
+                    font-size: 1rem;
+                }
+            }
+
+            p {
+                font-size: .9rem;
+                font-weight: 600;
+                color: $dark-gray;
+            }
+
+            .list {
+                display: flex;
+                flex-direction: column;
+                gap: 14px;
+
+                li {
+                    display: flex;
+                    align-items: center;
+                    gap: 6px;
+
+                    font-size: .9rem;
+                    font-weight: 600;
+                    color: $dark-gray;
+
+                    .icon {
+                        font-size: 1.4rem;
+                        color: white;
+                        border-radius: 50%;
+                        background: $purple;
+                    }
+                }
+            }
+
+            .btn {
+                margin-top: 1rem;
+            }
+        }
+
+        .basic {
+            background: $light-purple;
+            color: $black;
+        }
+
+        .premium {
+            background: $purple;
+            color: white;
+
+            p {
+                color: white;
+            }
+
+            .list {
+                li {
+                    color: white;
+
+                    .icon {
+                        background: white;
+                        color: $purple;
+                    }
+                }
+            }
+
+            .btn-outline {
+                border-color: white;
+            }
+        }
+
+    }
+}

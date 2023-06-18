@@ -1,0 +1,79 @@
+// Reset
+@import "reset";
+
+// Variables
+@import "variables";
+
+// Components
+
+@import "components/header";
+@import "components/button";
+@import "components/reconmmendations";
+@import "components/top-podcast";
+@import "components/main";
+@import "components/trending";
+@import "components/about";
+@import "components/podcasts";
+@import "components/price";
+@import "components/footer";
+@import "components/slider";
+
+body {
+  font-family: system-ui;
+}
+
+.container {
+  //border: 1px solid red;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.padding-x {
+  padding-left: 0;
+  padding-right: 0;
+
+  @media (width < 1440px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media (width < 480px) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.margin-y {
+  margin-top: 2.4rem;
+  margin-bottom: 2.4rem;
+
+  @media (width < 768px) {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  @media (width < 480px) {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.container-title {
+    margin-bottom: 2rem;
+
+  h3 {
+    font-size: 2.1rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-align: center;
+  }
+
+  p {
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    color: $dark-gray;
+    text-align: center;
+    padding: 0 8px;
+  }
+}
