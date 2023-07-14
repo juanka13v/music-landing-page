@@ -4,7 +4,7 @@ This is a landing page for a music and podcast platform that provides a wide ran
 
 ## Preview
 
-You can see a preview of the page at [https://music.netlify.app/](https://music.netlify.app/). Please note that this is just a demonstration.
+You can see a preview of the page at [https://music-podcast.netlify.app/](https://music-podcast.netlify.app/). Please note that this is just a demonstration.
 
 
 ## Additional Features
